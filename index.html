@@ -78,6 +78,29 @@ section {
   display: block;
 }
 
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;         /* bigger size */
+  font-size: 1.5rem;          /* larger text */
+  font-weight: 700;
+  border-radius: 1rem;
+  background: rgba(156, 163, 175, 0.25); /* grey transparent */
+  border: 2px solid rgba(156, 163, 175, 0.5);
+  color: #f3f4f6;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cv-button:hover {
+  background: rgba(156, 163, 175, 0.4); /* slightly more opaque on hover */
+  border-color: rgba(156, 163, 175, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(156, 163, 175, 0.3);
+}
+
 
 /* ---------- TIMELINE ---------- */
 .timeline {
@@ -300,6 +323,13 @@ section {
     <div>
       <h1>Sithmi Wijesinghe</h1>
       <p>A Data Scientist and Machine Learning Enthusiast at the beginning of professional journey.</p>
+
+<div style="margin-top: 2rem;">
+  <a href="CV.pdf" download class="cv-button">
+    Download CV
+  </a>
+</div>
+
     </div>
     <div>
       <img src="download-artguru.png" alt="Sithmi Wijesinghe">
